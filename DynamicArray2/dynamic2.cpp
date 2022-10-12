@@ -27,7 +27,6 @@ int main(){
             result << (double)(end-start)/CLOCKS_PER_SEC << endl;
             
         }
-        result << endl;
     }
     result.close();
     return 0;

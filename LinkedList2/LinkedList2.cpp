@@ -16,16 +16,18 @@ int main(){
 
             LinkedList list;
             for(int k=0; k<pow(2, j); ++k){
-                list.Push_back(rand());
+                list.Push_front(rand());
             }
 
             clock_t start = clock();
 
+            ListNode *current = list.getFirst();
             long long sum = 0;
-            for(int k=0; k<pow(2, j); ++k){
-                sum += dynamic[k];
+            while(current != NULL){
+                sum += current->getData();
+                current = current->getNext();
             }
-
+            
             clock_t end = clock();
             result << (double)(end-start)/CLOCKS_PER_SEC << endl;
 

@@ -18,7 +18,7 @@ int main(){
 
             LinkedList list;
             for(int k=0; k<pow(2, j); ++k){
-                list.Push_back(rand());
+                list.Push_front(rand());
             }
 
             clock_t end = clock();
