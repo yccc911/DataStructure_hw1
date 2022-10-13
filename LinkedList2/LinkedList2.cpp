@@ -8,9 +8,7 @@
 using namespace std;
 
 int main(){
-
     ofstream result("LinkedList2.result", ios::out);
-
     for(int i=0; i<4; ++i){
         for(int j=15; j<=30; ++j){
 
