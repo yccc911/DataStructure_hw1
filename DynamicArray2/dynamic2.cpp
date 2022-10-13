@@ -19,7 +19,8 @@ int main(){
             clock_t start = clock();
 
             long long sum = 0;
-            for(int j=0; j<pow(2, i); ++j){
+            unsigned int times = pow(2, i);
+            for(int j=0; j<times; ++j){
                 sum += dynamic[j];
             }
 
